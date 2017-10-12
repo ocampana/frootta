@@ -1,1 +1,101 @@
-frootta.bio
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Fr🍎🍋tta - mangiatela tootta!</title>
+<style> 
+
+@font-face {
+    font-family: 'eraserregular';
+    src: url('assets/fonts/eraser_regular/EraserRegular-webfont.eot');
+    src: url('assets/fonts/eraser_regular/EraserRegular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/eraser_regular/EraserRegular-webfont.woff2') format('woff2'),
+         url('assets/fonts/eraser_regular/EraserRegular-webfont.woff') format('woff'),
+         url('assets/fonts/eraser_regular/EraserRegular-webfont.ttf') format('truetype'),
+         url('assets/fonts/eraser_regular/EraserRegular-webfont.svg#eraserregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+    background-image: url(assets/img/background.jpeg);
+    background-position: left top, right bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /*background: url(assets/img/background.jpeg) right bottom no-repeat, url(paper.gif) left top repeat;*/
+    padding: 15px;
+
+    /*font-family: 'MyWebFont', Arial, sans-serif;*/
+}
+
+#container
+{
+    text-align: center;
+    padding: 50px;
+}
+
+#office
+{
+    /*width: 320px;
+    height: 439px;*/
+    width: 160px;
+    height: 220px;
+    background-image: url(assets/img/office.png);
+    background-size: 160px 220px;
+    display: inline-block;
+}
+
+#fruit
+{
+    /*width: 574px;
+    height: 439px;*/
+    width: 287px;
+    height: 220px;
+    background-image: url(assets/img/fruit.png);
+    background-size: 287px 220px;
+    display: inline-block;
+}
+
+.center
+{
+    text-align: center;
+}
+
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body>
+
+<div id="container">
+    <div id="office">
+    </div>&nbsp;
+    <div id="fruit">
+    </div>
+</div>
+
+<h1 style="font-family: 'eraserregular', Arial, sans-serif; text-align: center;">Fr🍎🍋tta</h1>
+<h2 style="font-family: 'eraserregular', Arial, sans-serif; color: #86825f; text-align: center;">Mangiatela tootta!</h2>
+
+<br>
+<br>
+
+<h3 class="center">Vuoi ricevere maggiorni informazioni su Fr🍎🍋tta  ? Seguici!</h3>
+
+<form class="center" name="contact" netlify-honeypot="bot-field" action="thank-you" netlify>
+  <p class="hidden">
+    <label>Don’t fill this out: <input name="bot-field"></label>
+  </p>
+  <p>
+    <input type="email" name="email" placeholder=" inserisci la tua email" required>
+    <button type=”submit”>Resta aggiornato!</button>
+  </p>
+</form>
+
+<br>
+
+</body>
+</html>
